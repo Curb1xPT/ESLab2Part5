@@ -65,13 +65,13 @@ int main()
                     }
                 }
             }   else {
-                    while (g >= 5 && f <= 60) {
+                    while (g >= 5 && f <= 600) {
                         incorrectCodeLed = ON;
                         ThisThread::sleep_for(BLINKING_RATE*5);
                         incorrectCodeLed = OFF;
                         ThisThread::sleep_for(BLINKING_RATE*5);
                     f = f + 1;
-                    } if (f > 60) {
+                    } if (f > 600) {
                         g = 0;
                         f = 0;
                     }
